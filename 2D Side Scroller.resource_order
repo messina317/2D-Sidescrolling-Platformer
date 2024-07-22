@@ -21,5 +21,6 @@
     {"name":"obj_floor","order":1,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"spr_coin","order":2,"path":"sprites/spr_coin/spr_coin.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
+    {"name":"spr_player_walk","order":3,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
   ],
 }
