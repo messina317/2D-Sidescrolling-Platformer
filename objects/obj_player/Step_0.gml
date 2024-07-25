@@ -49,6 +49,14 @@ if ((l0DB3E603_0 > 0))
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 5DD3A34C
+		/// @DnDParent : 179B5253
+		/// @DnDArgument : "soundid" "Jump"
+		/// @DnDSaveInfo : "soundid" "Jump"
+		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
 	}
 }
 
