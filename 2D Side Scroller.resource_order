@@ -23,6 +23,7 @@
     {"name":"Obj_Goal","order":3,"path":"objects/Obj_Goal/Obj_Goal.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"Jump","order":1,"path":"sounds/Jump/Jump.yy",},
+    {"name":"Music","order":2,"path":"sounds/Music/Music.yy",},
     {"name":"spr_coin","order":2,"path":"sprites/spr_coin/spr_coin.yy",},
     {"name":"spr_enemy_idle","order":6,"path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},

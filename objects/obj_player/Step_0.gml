@@ -33,19 +33,19 @@ if ((l0DB3E603_0 > 0))
 	/// @DnDArgument : "var" "move_y"
 	move_y = 0;
 
-	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
-	/// @DnDHash : 179B5253
+	/// @DnDHash : 11E81924
 	/// @DnDParent : 0DB3E603
-	var l179B5253_0;
-	l179B5253_0 = keyboard_check(vk_space);
-	if (l179B5253_0)
+	var l11E81924_0;
+	l11E81924_0 = keyboard_check_pressed(vk_space);
+	if (l11E81924_0)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 6C9999D5
 		/// @DnDComment : jump
-		/// @DnDParent : 179B5253
+		/// @DnDParent : 11E81924
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;
@@ -53,7 +53,7 @@ if ((l0DB3E603_0 > 0))
 		/// @DnDAction : YoYo Games.Audio.Play_Audio
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 5DD3A34C
-		/// @DnDParent : 179B5253
+		/// @DnDParent : 11E81924
 		/// @DnDArgument : "soundid" "Jump"
 		/// @DnDSaveInfo : "soundid" "Jump"
 		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);

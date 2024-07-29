@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":144,
+  "compression":2,
+  "conversionMode":0,
+  "duration":29.141043,
+  "name":"Music",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"Music.wav",
+  "type":1,
+  "volume":1.0,
+}
