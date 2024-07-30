@@ -43,9 +43,10 @@ if ((l0DB3E603_0 > 0))
 	/// @DnDArgument : "y" "y + 50"
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "object" "obj_floor"
+	/// @DnDArgument : "not" "1"
 	/// @DnDSaveInfo : "object" "obj_floor"
 	var l5D76DCD6_0 = instance_place(x + (25 * sign(move_x)), y + y + 50, [obj_floor]);
-	if ((l5D76DCD6_0 > 0))
+	if (!(l5D76DCD6_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
