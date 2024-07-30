@@ -38,14 +38,14 @@ if ((l0DB3E603_0 > 0))
 	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 5D76DCD6
+	/// @DnDComment : wall check
 	/// @DnDParent : 0DB3E603
 	/// @DnDArgument : "x" "x + (25 * sign(move_x))"
-	/// @DnDArgument : "y" "y + 50"
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "object" "obj_floor"
 	/// @DnDArgument : "not" "1"
 	/// @DnDSaveInfo : "object" "obj_floor"
-	var l5D76DCD6_0 = instance_place(x + (25 * sign(move_x)), y + y + 50, [obj_floor]);
+	var l5D76DCD6_0 = instance_place(x + (25 * sign(move_x)), y + 0, [obj_floor]);
 	if (!(l5D76DCD6_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
@@ -69,6 +69,45 @@ if ((l0DB3E603_0 > 0))
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 5DD3A34C
 		/// @DnDParent : 5D76DCD6
+		/// @DnDArgument : "soundid" "Jump"
+		/// @DnDSaveInfo : "soundid" "Jump"
+		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
+	}
+
+	/// @DnDAction : YoYo Games.Collisions.If_Object_At
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 656ACB4A
+	/// @DnDParent : 0DB3E603
+	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
+	/// @DnDArgument : "y" "y + 50"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "object" "obj_floor"
+	/// @DnDArgument : "not" "1"
+	/// @DnDSaveInfo : "object" "obj_floor"
+	var l656ACB4A_0 = instance_place(x + (30 * sign(move_x)), y + y + 50, [obj_floor]);
+	if (!(l656ACB4A_0 > 0))
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 5C286BF2
+		/// @DnDParent : 656ACB4A
+		/// @DnDArgument : "expr" "move_x * -1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x * -1;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 56CFC5F3
+		/// @DnDComment : jump
+		/// @DnDParent : 656ACB4A
+		/// @DnDArgument : "expr" "-jump_speed"
+		/// @DnDArgument : "var" "move_y"
+		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 50418FE4
+		/// @DnDParent : 656ACB4A
 		/// @DnDArgument : "soundid" "Jump"
 		/// @DnDSaveInfo : "soundid" "Jump"
 		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
